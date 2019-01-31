@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="453CCF23-17A3-CB02-623C-CDDC633EF578" containerWithKeyObject="6486EADA-C9D2-9D4B-1916-3589CB34ABBE" localFKIndex="D2519162-4739-652D-5197-ED5473AACE16" name="KOMENTAR_CLANEK_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>08F16B71-3BBC-2106-703E-F21F219F3521</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<referredTableLongName>CLANEK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A9DACF9-7F39-D4B1-6129-2D13F315A00A</referredTableID>
+<keyObject>BF04D3FA-D4D9-FBBD-F6DF-1E5A92B49D0A</keyObject>
+<referredKeyID>BF04D3FA-D4D9-FBBD-F6DF-1E5A92B49D0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_clanku</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

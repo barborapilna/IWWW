@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A9DACF9-7F39-D4B1-6129-2D13F315A00A" name="CLANEK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:44 UTC</createdTime>
+<generatorID>443D6251-89E1-46C5-CBFD-48D59B9C9DF4</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_clanku" id="C94C1BAF-77AB-BB42-EC47-839E7D234628">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>938B230A-C132-3632-8357-D6D21C858CB5</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev_clanku" id="F2B072CB-58D2-9282-7ECD-2216CC4D8C31">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>16AF6120-AC64-09D6-1F32-62E71A73C0C8</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text_clanku" id="E347B79D-1AB4-82AD-83B6-311EC443E6D6">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>1125E516-F97F-A1CF-E1FE-B80FB5A315C2</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100000</dataTypeSize>
+<ownDataTypeParameters>100000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_vlozeni" id="F338AF68-8962-6A0E-2DB8-D39BFAE62C41">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>2E7F64B8-DEF3-248C-3659-E007C10E8C96</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_upravy" id="F6F1553C-BF85-E31E-4B26-DF37D13829AF">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>9A4AE7B2-1A46-EA89-FF77-0D78D98C9A9D</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UCET_UZIVATELE_id_uctu" id="9DCD4DD3-9A07-0D95-A3C4-9854534B8C2A">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>49E08B36-6F51-FA66-E614-EE34D92621D4</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D8548A-548F-C116-A20E-BE805DCEB790" referredColumn="45AB6FA7-F564-A876-444D-850643FA7319"/>
+</associations>
+</Column>
+<Column name="KATEGORIE_id_kategorie" id="ED67A548-270C-269F-960B-1C61396F305E">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>E922D941-0B9B-36AF-B4B8-812E07B1B55E</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F91083B-83F0-D867-5A12-2A465D413573" referredColumn="9F946D11-653A-DDCA-46C8-E0F934DE1430"/>
+</associations>
+</Column>
+<Column name="OBRAZEK_id_obrazku" id="ABD35C8F-37E9-7B1E-CF52-B914A804AEB5">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>A20960CA-3D23-DD29-6F51-078381B7D52E</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A9852DF-5FF7-50F4-5D43-DF87A4AB68CF" referredColumn="2478C79C-9DD4-BBA5-1904-5529045953E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF04D3FA-D4D9-FBBD-F6DF-1E5A92B49D0A" name="CLANEK_PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>2B3E6F5D-6194-7C43-5443-4B3410BB7BB2</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C94C1BAF-77AB-BB42-EC47-839E7D234628"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21863CC3-3F89-C373-CA38-B8C6233B7765" name="CLANEK__IDX">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ED337BC5-B0AD-1E20-2756-EB48E861745E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="ED67A548-270C-269F-960B-1C61396F305E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7301FD2F-2329-CCAB-C21E-1DA84029EAF2" name="CLANEK_UCET_UZIVATELE_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>A874825E-E02F-32A7-5FE2-00EB02856141</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DCD4DD3-9A07-0D95-A3C4-9854534B8C2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D869FEC-BCBC-D9CB-8D7B-CE980CD603A6" name="CLANEK_KATEGORIE_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>ED337BC5-B0AD-1E20-2756-EB48E861745E</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED67A548-270C-269F-960B-1C61396F305E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39D90E3F-0F81-D492-2848-EE13250F993D" name="CLANEK_OBRAZEK_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>E29B6BE7-B049-1DC5-73C1-5E9AA1BAC324</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABD35C8F-37E9-7B1E-CF52-B914A804AEB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A3E935B5-ACA7-C79C-3199-7DCD9180E559" containerWithKeyObject="0452B88B-365A-DE8B-55D0-64DB4509F201" localFKIndex="2B3E20FD-37B4-D3E1-F29E-F3B4F260CB03" name="HODNOCENI_CLANKU_CLANEK_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>57A771F0-DEDA-4F5B-2B83-E2E57A703D1B</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<referredTableLongName>CLANEK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A9DACF9-7F39-D4B1-6129-2D13F315A00A</referredTableID>
+<keyObject>BF04D3FA-D4D9-FBBD-F6DF-1E5A92B49D0A</keyObject>
+<referredKeyID>BF04D3FA-D4D9-FBBD-F6DF-1E5A92B49D0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_clanku</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

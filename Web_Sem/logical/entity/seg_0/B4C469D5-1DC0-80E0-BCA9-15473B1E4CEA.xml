@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4C469D5-1DC0-80E0-BCA9-15473B1E4CEA" name="HODNOCENI_CLANKU">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:34:10 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_hodnoceni" id="807EE403-917E-2D99-BCD2-6A99AE29A41B">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:34:16 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hodnoceni" id="28623334-5779-E703-0CC4-57C245C66552">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:34:27 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_clanku" id="C2940636-D90D-F884-1A04-A01BC8A62198">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:35:52 UTC</createdTime>
+<generatorID>57A771F0-DEDA-4F5B-2B83-E2E57A703D1B</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<referedAttribute>938B230A-C132-3632-8357-D6D21C858CB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78E4445E-9D38-F145-670C-3D549058726D" name="HODNOCENI_CLANKU PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:35:32 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>807EE403-917E-2D99-BCD2-6A99AE29A41B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

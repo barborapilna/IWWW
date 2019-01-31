@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C03DE3F-B872-229D-B70F-A4EC04BC1E26" name="OBRAZEK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>54FC8B42-6EAD-1F22-B211-70B8EC999732</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_obrazku" id="2478C79C-9DD4-BBA5-1904-5529045953E0">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>996E1C0B-2BFF-3A2F-488B-75B2B5F9F59B</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev_obrazku" id="DCB97FBD-73A4-09E6-06C3-0053DDDECF28">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>D1B5A2B7-5ADE-A867-B77D-70326AD41D0B</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F932ABD3-B8E1-2CFF-208D-CD5B9E789648" name="OBRAZEK_PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:47:19 UTC</createdTime>
+<generatorID>86087ACB-44DC-6EA1-D5DE-925C5772434A</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2478C79C-9DD4-BBA5-1904-5529045953E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

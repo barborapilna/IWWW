@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A20478B6-0224-934B-8E38-20D5C1FE1AD9" name="UCET_UZIVATELE">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>296E0D48-4E76-A73D-344B-F6F4B0AD3803</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_uctu" id="45AB6FA7-F564-A876-444D-850643FA7319">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>CF9713DD-874B-7A1B-F92E-6C43713FE40D</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno_uzivatele" id="9FEA1358-CFEC-04D2-1C7B-896BE4FDA448">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>A308A11A-4C98-09B8-AE0A-CA205015849F</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni_uzivatele" id="25E97704-121A-8190-8F43-4407B69B888A">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>E81D2233-6C63-1DFC-720B-69DA578E2123</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_uzivatele" id="C4B25E32-EE3B-FDC3-38D7-BB6529C9C6C6">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>8BFB254C-E76A-22BD-AF39-036CD57BF623</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_uzivatele" id="1877E0D0-5CE9-65D9-020D-06FE04D01EAB">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>2510D46E-4785-4F4B-D80F-EC4E6873B7E5</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AD4E6B5-5EF5-7099-9CE2-4BD0102F71D7" name="UCET_UZIVATELE_PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>D2A4A057-E2C0-1834-DD92-82CFBF15C55F</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45AB6FA7-F564-A876-444D-850643FA7319"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0DCBBF9-79CC-A88F-63B8-855902E8ECD0" name="UCET_UZIVATELE__IDX">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BA0D605A-982B-84D7-8794-18FD0B715D85</relationGeneratorID>
+</ind_PK_UK>
+</indexes>
+</Table>

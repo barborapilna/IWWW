@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54FC8B42-6EAD-1F22-B211-70B8EC999732" name="OBRAZEK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:44:38 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_obrazku" id="996E1C0B-2BFF-3A2F-488B-75B2B5F9F59B">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:44:49 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev_obrazku" id="D1B5A2B7-5ADE-A867-B77D-70326AD41D0B">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:45:08 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86087ACB-44DC-6EA1-D5DE-925C5772434A" name="OBRAZEK PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:45:07 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>996E1C0B-2BFF-3A2F-488B-75B2B5F9F59B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

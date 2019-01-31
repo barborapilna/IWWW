@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F91083B-83F0-D867-5A12-2A465D413573" containerWithKeyObject="8A9DACF9-7F39-D4B1-6129-2D13F315A00A" localFKIndex="3D869FEC-BCBC-D9CB-8D7B-CE980CD603A6" name="CLANEK_KATEGORIE_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>ED337BC5-B0AD-1E20-2756-EB48E861745E</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<referredTableLongName>KATEGORIE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>060F95F1-B2EA-96DF-B278-3309861261E4</referredTableID>
+<keyObject>82609972-167A-33AD-4BC1-135E3643DCC0</keyObject>
+<referredKeyID>82609972-167A-33AD-4BC1-135E3643DCC0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_kategorie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

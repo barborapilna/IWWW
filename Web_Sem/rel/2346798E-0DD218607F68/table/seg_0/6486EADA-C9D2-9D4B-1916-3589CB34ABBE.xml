@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6486EADA-C9D2-9D4B-1916-3589CB34ABBE" name="KOMENTAR">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>754345E6-F032-A392-72A3-748F40E3C186</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_komentare" id="ECADBC70-E0CA-1AEF-540A-AD9DC18BAF28">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>5FDB4421-AAC8-B50E-EC20-97D8754A9242</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text_komentare" id="881FD3DA-3A3F-7DD9-41E6-C3C5D932ED15">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>601F67BF-AED0-A90A-41C1-66956C06DDA0</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLANEK_id_clanku" id="53C4A8ED-696C-38BE-5867-F79B017691F5">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>B3AF4EFC-AF92-550A-D2CF-90B95AEB7022</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="453CCF23-17A3-CB02-623C-CDDC633EF578" referredColumn="C94C1BAF-77AB-BB42-EC47-839E7D234628"/>
+</associations>
+</Column>
+<Column name="KOMENTAR_id_komentare" id="1CA33450-FC24-F1D4-A9EC-CCFA966912B6">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>EB2BF84E-872C-4A5F-1A83-B9E9310F661D</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4988C15-1094-85D1-9847-3A627DE74C33" referredColumn="ECADBC70-E0CA-1AEF-540A-AD9DC18BAF28"/>
+</associations>
+</Column>
+<Column name="UCET_UZIVATELE_id_uctu" id="34906735-79D4-6DD5-672C-02E83BC640EB">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:40:25 UTC</createdTime>
+<generatorID>B2FBCB7F-58B3-8199-6AD9-EE7CB3CB39F8</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69F3008A-8CA6-D8AF-4706-8D03DAFC89D0" referredColumn="45AB6FA7-F564-A876-444D-850643FA7319"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7BF8060-272A-1599-60A8-EC4D136BFFED" name="KOMENTAR_PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:27:45 UTC</createdTime>
+<generatorID>875912A3-4BED-52DD-4F41-48B47C4A944F</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECADBC70-E0CA-1AEF-540A-AD9DC18BAF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2519162-4739-652D-5197-ED5473AACE16" name="KOMENTAR_CLANEK_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>08F16B71-3BBC-2106-703E-F21F219F3521</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53C4A8ED-696C-38BE-5867-F79B017691F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E8A3BF5-A62B-7EAD-4341-B3201436E520" name="KOMENTAR_KOMENTAR_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:38:12 UTC</createdTime>
+<generatorID>4AE40FAE-A2B1-392A-BA84-A8F6D7F670E3</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CA33450-FC24-F1D4-A9EC-CCFA966912B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCF95D3D-261D-3EAB-DDCD-D3E2B7560072" name="KOMENTAR_UCET_UZIVATELE_FK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 10:40:25 UTC</createdTime>
+<generatorID>34FDDDA2-C833-1ACC-0A23-EF0452A6FBFB</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34906735-79D4-6DD5-672C-02E83BC640EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

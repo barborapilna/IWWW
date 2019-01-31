@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="443D6251-89E1-46C5-CBFD-48D59B9C9DF4" name="CLANEK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:34:45 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_clanku" id="938B230A-C132-3632-8357-D6D21C858CB5">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:34:50 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev_clanku" id="16AF6120-AC64-09D6-1F32-62E71A73C0C8">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:35:11 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="text_clanku" id="1125E516-F97F-A1CF-E1FE-B80FB5A315C2">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:23:31 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100000</dataTypeSize>
+<ownDataTypeParameters>100000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_vlozeni" id="2E7F64B8-DEF3-248C-3659-E007C10E8C96">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:36:26 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_upravy" id="9A4AE7B2-1A46-EA89-FF77-0D78D98C9A9D">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:36:42 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uctu" id="49E08B36-6F51-FA66-E614-EE34D92621D4">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:38:26 UTC</createdTime>
+<generatorID>A874825E-E02F-32A7-5FE2-00EB02856141</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<referedAttribute>CF9713DD-874B-7A1B-F92E-6C43713FE40D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_kategorie" id="E922D941-0B9B-36AF-B4B8-812E07B1B55E">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:19:00 UTC</createdTime>
+<generatorID>ED337BC5-B0AD-1E20-2756-EB48E861745E</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<referedAttribute>36ED3AF3-2A4D-8416-4181-E9DA92DC0025</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_obrazku" id="A20960CA-3D23-DD29-6F51-078381B7D52E">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 09:46:18 UTC</createdTime>
+<generatorID>E29B6BE7-B049-1DC5-73C1-5E9AA1BAC324</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<referedAttribute>996E1C0B-2BFF-3A2F-488B-75B2B5F9F59B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2B3E6F5D-6194-7C43-5443-4B3410BB7BB2" name="CLANEK PK">
+<createdBy>admin</createdBy>
+<createdTime>2018-12-17 08:35:09 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>938B230A-C132-3632-8357-D6D21C858CB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
