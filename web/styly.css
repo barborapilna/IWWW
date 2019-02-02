@@ -1,0 +1,135 @@
+﻿body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Název blogu */
+header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Fake obrázek */
+.fakeimg {
+    background-color: #aaa;
+    width: 95%;
+    padding: 20px;
+}
+
+/* Karta */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Patička */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Najetí myší na link */
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+/* Ctrl + P dá pryč hlavičku a patičku pro tisk stránky */
+@media print {
+    nav {
+        display: none !important;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    main,
+    main ul,
+    main ul li {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    main{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main ul:first-child{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main ul:first-child li:first-child{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+}
+
+
+/* Vzhled pro tabulky */
+.myTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.myTable td, .myTable th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.myTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.myTable tr:hover {
+    background-color: #ddd;
+}
+
+.myTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.myTable td{
+    text-align: center;
+}
+
+.myTable a {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+.myTable a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
