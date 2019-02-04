@@ -6,8 +6,10 @@
 
 /* Název blogu */
 header {
-    padding: 30px;
-    font-size: 40px;
+    font-family: Garamond;
+    font-style: italic;
+    padding: 1px;
+    font-size: 60px;
     text-align: center;
     background: white;
 }
@@ -132,4 +134,45 @@ a:hover {
 .myTable a:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+/* Navigace */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.kategorienav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.kategorienav a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.kategorienav a:hover {
+    background-color: #ddd;
+    color: black;
 }

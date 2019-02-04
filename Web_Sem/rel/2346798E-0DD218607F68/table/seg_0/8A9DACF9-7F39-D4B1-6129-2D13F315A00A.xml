@@ -75,12 +75,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B1D8548A-548F-C116-A20E-BE805DCEB790" referredColumn="45AB6FA7-F564-A876-444D-850643FA7319"/>
-</associations>
 </Column>
 <Column name="KATEGORIE_id_kategorie" id="ED67A548-270C-269F-960B-1C61396F305E">
 <createdBy>admin</createdBy>
@@ -91,7 +88,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -107,11 +104,38 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>100</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="9A9852DF-5FF7-50F4-5D43-DF87A4AB68CF" referredColumn="2478C79C-9DD4-BBA5-1904-5529045953E0"/>
+</associations>
+</Column>
+<Column name="login" id="D8A2202F-25DE-DE8D-91E4-ED74E0F799ED">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 18:36:24 UTC</createdTime>
+<generatorID>0260A622-CAF6-ED31-8FAF-BFF0DF2B1F3C</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_uzivatele" id="5CC78113-5EFA-477B-D82C-F55F4B5C1536">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 19:47:39 UTC</createdTime>
+<generatorID>5AE10B4C-4DF8-C94B-D338-A97D326CEF64</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D8548A-548F-C116-A20E-BE805DCEB790" referredColumn="86BA6173-BD8F-70B4-FFD9-1A0222DE7C44"/>
 </associations>
 </Column>
 </columns>
@@ -147,7 +171,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9DCD4DD3-9A07-0D95-A3C4-9854534B8C2A"/>
+<colUsage columnID="5CC78113-5EFA-477B-D82C-F55F4B5C1536"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="3D869FEC-BCBC-D9CB-8D7B-CE980CD603A6" name="CLANEK_KATEGORIE_FK">

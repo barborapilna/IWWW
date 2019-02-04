@@ -54,7 +54,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>100</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_komentare1" id="EB2BF84E-872C-4A5F-1A83-B9E9310F661D">
 <createdBy>admin</createdBy>
@@ -70,21 +70,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_uctu" id="B2FBCB7F-58B3-8199-6AD9-EE7CB3CB39F8">
+<Attribute name="id_uzivatele" id="BA2D124E-4706-411E-0001-90F033046041">
 <createdBy>admin</createdBy>
-<createdTime>2018-12-17 10:40:12 UTC</createdTime>
+<createdTime>2019-01-31 19:45:38 UTC</createdTime>
 <generatorID>34FDDDA2-C833-1ACC-0A23-EF0452A6FBFB</generatorID>
 <ownerDesignName>Web_Sem</ownerDesignName>
 <engineerTo>
 <item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
 </engineerTo>
-<referedAttribute>CF9713DD-874B-7A1B-F92E-6C43713FE40D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
+<referedAttribute>31C51DA8-FF36-0CFE-A72B-BA395C8241E8</referedAttribute>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -93,8 +91,9 @@
 <createdBy>admin</createdBy>
 <createdTime>2018-12-17 09:21:05 UTC</createdTime>
 <ownerDesignName>Web_Sem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

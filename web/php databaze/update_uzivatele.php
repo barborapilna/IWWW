@@ -4,7 +4,7 @@ $options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
 );
 
-$conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
+$conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
 $stmt = $conn->prepare("SELECT login, heslo, jmeno_uzivatele, prijmeni_uzivatele, email_uzivatele,
                                         FROM ucet_uzivatele WHERE id_uzivatele = :id_uzivatele");
 $stmt->bindParam(':id_uzivatele', $_GET["id_uzivatele"]);
@@ -34,7 +34,7 @@ $uzivatel = $stmt->fetch();
         $stmt->bindParam(':id_uzivatele', $_GET["id_uzivatele"]);
         $stmt->execute();
 
-        header("Location:" . BASE_URL . "?page=uzivatel"); //presmerovat!!
+        include "./home.php";
     }else { ?>
     <div>
         <script>
@@ -77,30 +77,9 @@ $uzivatel = $stmt->fetch();
                              required value="<?php echo $uzivatel['jmeno']; ?>"/></p>
             <p>Příjmení: <input style="margin-left: 30px" type="text" name="prijmeni" placeholder="Zadejte příjmení"
                              required value="<?php echo $uzivatel['prijmeni']; ?>"/></p>
-        </form>
-		
-		<?php if($_SESSION["role"] == "Administrator") {?>
-            <p>Role uživatele: <select name="id_role" style="margin-left: 85px">
-
-                    <?php
-                    if ($user['role'] == 1) { ?>
-                        <option value="1" selected>Administrator</option>
-                    <?php } else { ?>
-                        <option value="1">Administrator</option>
-                        <?php
-                    }
-
-                    if ($user['role'] == 2) {
-                        ?>
-                        <option value="2" selected>Uživatel</option>
-                    <?php } else { ?>
-                        <option value="2">Uživatel</option>
-                    <?php } ?>
-                </select></p>
-                <?php } ?>
-            
             <p><input name="submit" type="submit" value="Update"/></p>
-		
+        </form>
+
         <?php } ?>
     </div>
 </div>

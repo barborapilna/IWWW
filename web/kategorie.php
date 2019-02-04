@@ -10,17 +10,12 @@
     </nav>
 <?php } ?>
 
-<h1>Uživatelé</h1>
+<h1>Kategorie</h1>
 <table class="myTable">
     <thead>
     <tr>
         <th><strong>Řádek</strong></th>
-        <th><strong>Login</strong></th>
-        <th><strong>Heslo</strong></th>
-        <th><strong>Jméno</strong></th>
-        <th><strong>Příjmení</strong></th>
-        <th><strong>Email</strong></th>
-        <th><strong>Role uživatele</strong></th>
+        <th><strong>Kategorie</strong></th>
     </tr>
     </thead>
     <tbody>
@@ -34,23 +29,18 @@
     $conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
 
     $count = 1;
-    $sel_query = "SELECT * FROM ucet_uzivatele ORDER BY jmeno_uzivatele DESC";
+    $sel_query = "SELECT id_kategorie, nazev_kategorie FROM kategorie ORDER BY nazev_kategorie DESC";
 
     $stmt = $conn->query($sel_query);
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
         <tr>
             <td><?php echo $count; ?></td>
-            <td><?php echo $row["login"]; ?></td>
-            <td><?php echo $row["heslo"]; ?></td>
-            <td><?php echo $row["jmeno_uzivatele"]; ?></td>
-            <td><?php echo $row["prijmeni_uzivatele"]; ?></td>
-            <td><?php echo $row["email_uzivatele"]; ?></td>
-            <td><?php echo $row["role_uzivatele"]; ?></td>
+            <td><?php echo $row["nazev_kategorie"]; ?></td>
             <td>
-                <a href="<?php echo BASE_URL . "?page=update_uzivatele&id_uzivatele=" . $row["id_uzivatele"]; ?>">Upravit</a>
+                <a href="<?php echo BASE_URL . "?page=update_kategorie&id_kategorie=" . $row["id_kategorie"]; ?>">Upravit</a>
             </td>
             <td>
-                <a href="<?php echo BASE_URL . "?page=delete_uzivatele&id_uzivatele=" . $row["id_uzivatele"]; ?>">Smazat</a>
+                <a href="<?php echo BASE_URL . "?page=delete_kategorie&id_kategorie=" . $row["id_kategorie"]; ?>">Smazat</a>
             </td>
         </tr>
 
@@ -61,9 +51,8 @@
 
     </tbody>
 </table>
-
 <br>
-<h5>Vytvořit nového uživatele</h5>
-<?php include 'php databaze/insert_uzivatele.php'; ?>
+<h5>Vytvořit novou kategorii</h5>
+<?php include 'php databaze/insert_kategorie.php'; ?>
 <br>
 <hr>

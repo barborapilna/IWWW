@@ -4,7 +4,7 @@ $options = array(
     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
 );
 
-$conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
+$conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
 $stmt = $conn->prepare("SELECT id_kategorie, nazev_kategorie FROM kategorie WHERE id_kategorie = :id_kategorie");
 $stmt->bindParam(':id_kategorie', $_GET["id_kategorie"]);
 $stmt->execute();
@@ -21,7 +21,7 @@ $kategorie =$stmt->fetch();
         $stmt->bindParam(':id_kategorie', $_GET["id_kategorie"]);
         $stmt->execute();
 
-        header("Location:" . BASE_URL . "?page=kategorie"); //presmerovani!!!
+        include "./home.php";
     }else { ?>
     <div>
         <form name="form" method="post">
@@ -30,7 +30,7 @@ $kategorie =$stmt->fetch();
                                  placeholder="Zadejte kategorii: "
                                  value="<?php echo $kategorie["kategorie"] ?>"/></p>
 
-            <p><input name="submit" type="submit" value="Upadate"/></p>
+            <p><input name="submit" type="submit" value="Update"/></p>
 
         </form>
         <?php } ?>

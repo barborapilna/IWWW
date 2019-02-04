@@ -29,7 +29,7 @@ $conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, 
     <h2>Blog Dva světy</h2>
 </header>
 <nav style="width:  100%; margin-bottom: 12px; text-align: center">
-    <div class="card">
+    <div class="topnav">
     <a href="<?= BASE_URL ?>">Domů </a>
     <?php if (!empty($_SESSION["id_uzivatele"])) { ?>
         <a href="<?= BASE_URL . "?page=odhlasit" ?>"> Odhlásit </a>
@@ -51,9 +51,9 @@ $conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, 
         $sel_query = "SELECT * FROM kategorie";
         $stmt = $conn->query($sel_query);
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo '<a style="margin-right: 10px" href="' . BASE_URL . "?page=urcita_kategorie&kategorie=" . $row["nazev_kategorie"] . '">' . $row["nazev_kategorie"] . '</a>';
+            echo '<a style="margin-right: 30px" href="' . BASE_URL . "?page=urcita_kategorie&kategorie=" . $row["nazev_kategorie"] . '">' . $row["nazev_kategorie"] . '</a>';
         } ?>
-    </div>
+    </div><br>
 </nav>
 
 <main>

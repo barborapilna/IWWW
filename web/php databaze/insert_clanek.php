@@ -35,9 +35,10 @@
     <div>
         <form name="form" method="post" enctype="multipart/form-data">
             <input type="hidden" name="new" value="1"/>
-            <p>Název článku: <input style="margin-left: 32px" type="text" name="nazev"
-                                    placeholder="Zadejte název článku"/></p>
-            <textarea name="clanek" cols="150" rows="1000" placeholder="Text článku"></textarea>
+
+            <textarea name="nazev" cols="150" rows="2" placeholder="Název článku"></textarea>
+
+            <textarea name="clanek" cols="150" rows="100" placeholder="Text článku"></textarea>
 
             <p>Kategorie: <select name="kategorie" style="margin-left: 18px; width: 180px">
                     <?php

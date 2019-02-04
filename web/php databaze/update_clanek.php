@@ -1,3 +1,12 @@
+<?php
+$stmt = $conn->prepare("SELECT nazev_clanku, text_clanku FROM clanek WHERE id_clanku = :id_clanku");
+$stmt->bindParam(':id_clanku', $_GET["id_clanku"]);
+
+$stmt->execute();
+$clanek = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
+
 <div class="form">
     <?php
     if (isset($_POST['new']) && $_POST['new'] == 1)
@@ -37,9 +46,10 @@
     <div>
         <form name="form" method="post" enctype="multipart/form-data">
             <input type="hidden" name="new" value="1"/>
-            <p>Název článku: <input style="margin-left: 32px" type="text" name="nazev"
-                                    placeholder="Zadejte název článku"/></p>
-            <textarea name="clanek" cols="150" rows="1000" placeholder="Text článku"></textarea>
+
+            <?php echo'<textarea name="nazev" cols="150" rows="2" placeholder="Název článku">' . $clanek["nazev_clanku"] .'</textarea>';?>
+
+            <?php echo'<textarea name="clanek" cols="150" rows="100" placeholder="Text článku">' . $clanek["text_clanku"] .'</textarea>';?>
 
             <p>Kategorie: <select name="kategorie" style="margin-left: 18px; width: 180px">
                     <?php
@@ -53,7 +63,7 @@
                 </select></p>
 
             <p>Obrázek: <input type="file" name="imageFile"/></p>
-            <p><input name="submit" type="submit" value="Insert"/></p>
+            <p><input name="submit" type="submit" value="Update"/></p>
         </form>
         <?php } ?>
     </div>

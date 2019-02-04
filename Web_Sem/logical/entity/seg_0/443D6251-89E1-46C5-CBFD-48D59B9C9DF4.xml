@@ -78,21 +78,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_uctu" id="49E08B36-6F51-FA66-E614-EE34D92621D4">
-<createdBy>admin</createdBy>
-<createdTime>2018-12-17 08:38:26 UTC</createdTime>
-<generatorID>A874825E-E02F-32A7-5FE2-00EB02856141</generatorID>
-<ownerDesignName>Web_Sem</ownerDesignName>
-<engineerTo>
-<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
-</engineerTo>
-<referedAttribute>CF9713DD-874B-7A1B-F92E-6C43713FE40D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_kategorie" id="E922D941-0B9B-36AF-B4B8-812E07B1B55E">
 <createdBy>admin</createdBy>
 <createdTime>2018-12-17 09:19:00 UTC</createdTime>
@@ -121,6 +106,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>100</dataTypePrecision>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzivatele" id="5AE10B4C-4DF8-C94B-D338-A97D326CEF64">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 19:45:38 UTC</createdTime>
+<generatorID>A874825E-E02F-32A7-5FE2-00EB02856141</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<referedAttribute>31C51DA8-FF36-0CFE-A72B-BA395C8241E8</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

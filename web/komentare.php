@@ -10,17 +10,13 @@
     </nav>
 <?php } ?>
 
-<h1>Uživatelé</h1>
+<h1>Komentáře</h1>
 <table class="myTable">
     <thead>
     <tr>
         <th><strong>Řádek</strong></th>
-        <th><strong>Login</strong></th>
-        <th><strong>Heslo</strong></th>
-        <th><strong>Jméno</strong></th>
-        <th><strong>Příjmení</strong></th>
-        <th><strong>Email</strong></th>
-        <th><strong>Role uživatele</strong></th>
+        <th><strong>Autor</strong></th>
+        <th><strong>Komentář</strong></th>
     </tr>
     </thead>
     <tbody>
@@ -34,23 +30,18 @@
     $conn = new PDO("mysql:host=localhost;dbname=" . DB_NAME, DB_USER, DB_PASSWORD, $options);
 
     $count = 1;
-    $sel_query = "SELECT * FROM ucet_uzivatele ORDER BY jmeno_uzivatele DESC";
+    $sel_query = "SELECT k.text_komentare, k.fk_id_uctu, u.jmeno_uzivatele, u.prijmeni_uzivatele, k.id_komentare
+                                      FROM komentar k
+                                      JOIN ucet_uzivatele u ON k.fk_id_uctu = u.id_uzivatele";
 
     $stmt = $conn->query($sel_query);
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
         <tr>
             <td><?php echo $count; ?></td>
-            <td><?php echo $row["login"]; ?></td>
-            <td><?php echo $row["heslo"]; ?></td>
-            <td><?php echo $row["jmeno_uzivatele"]; ?></td>
-            <td><?php echo $row["prijmeni_uzivatele"]; ?></td>
-            <td><?php echo $row["email_uzivatele"]; ?></td>
-            <td><?php echo $row["role_uzivatele"]; ?></td>
+            <td><?php echo $row["jmeno_uzivatele"] . " " . $row["prijmeni_uzivatele"]; ?>
+            <td><?php echo $row["text_komentare"]; ?></td>
             <td>
-                <a href="<?php echo BASE_URL . "?page=update_uzivatele&id_uzivatele=" . $row["id_uzivatele"]; ?>">Upravit</a>
-            </td>
-            <td>
-                <a href="<?php echo BASE_URL . "?page=delete_uzivatele&id_uzivatele=" . $row["id_uzivatele"]; ?>">Smazat</a>
+                <a href="<?php echo BASE_URL . "?page=delete_komentar&id_komentare=" . $row["id_komentare"]; ?>">Smazat</a>
             </td>
         </tr>
 
@@ -61,9 +52,3 @@
 
     </tbody>
 </table>
-
-<br>
-<h5>Vytvořit nového uživatele</h5>
-<?php include 'php databaze/insert_uzivatele.php'; ?>
-<br>
-<hr>

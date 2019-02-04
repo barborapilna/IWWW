@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>100</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,100,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -57,7 +57,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -73,11 +73,35 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login" id="E7065EF5-23AA-16C5-6146-C7BFF61D3881">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 18:36:24 UTC</createdTime>
+<generatorID>82EB1ECD-5E57-49CB-CFC6-B9BDF5A08BA3</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_uzivatele" id="D6FAC22F-1BD8-FB81-CE6F-C03262D9AEB7">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 19:47:39 UTC</createdTime>
+<generatorID>BA2D124E-4706-411E-0001-90F033046041</generatorID>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="69F3008A-8CA6-D8AF-4706-8D03DAFC89D0" referredColumn="45AB6FA7-F564-A876-444D-850643FA7319"/>
+<colAssociation fkAssociation="69F3008A-8CA6-D8AF-4706-8D03DAFC89D0" referredColumn="86BA6173-BD8F-70B4-FFD9-1A0222DE7C44"/>
 </associations>
 </Column>
 </columns>
@@ -124,7 +148,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="34906735-79D4-6DD5-672C-02E83BC640EB"/>
+<colUsage columnID="D6FAC22F-1BD8-FB81-CE6F-C03262D9AEB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

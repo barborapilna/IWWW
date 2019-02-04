@@ -15,7 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_uctu" id="CF9713DD-874B-7A1B-F92E-6C43713FE40D">
+<Attribute name="id_uzivatele" id="31C51DA8-FF36-0CFE-A72B-BA395C8241E8">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 19:45:30 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="login" id="CF9713DD-874B-7A1B-F92E-6C43713FE40D">
 <createdBy>admin</createdBy>
 <createdTime>2018-12-17 08:27:49 UTC</createdTime>
 <ownerDesignName>Web_Sem</ownerDesignName>
@@ -24,9 +36,22 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="heslo" id="55204153-9225-D997-D300-9466BF91EFA6">
+<createdBy>admin</createdBy>
+<createdTime>2019-01-31 18:34:58 UTC</createdTime>
+<ownerDesignName>Web_Sem</ownerDesignName>
+<engineerTo>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="role_uzivatele" id="2510D46E-4785-4F4B-D80F-EC4E6873B7E5">
 <createdBy>admin</createdBy>
@@ -86,13 +111,12 @@
 <createdBy>admin</createdBy>
 <createdTime>2018-12-17 08:28:04 UTC</createdTime>
 <ownerDesignName>Web_Sem</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="false"/>
+<item key="2346798E-88D0-41FB-14BB-0DD218607F68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>CF9713DD-874B-7A1B-F92E-6C43713FE40D</attributeRef>
+<attributeRef>31C51DA8-FF36-0CFE-A72B-BA395C8241E8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
